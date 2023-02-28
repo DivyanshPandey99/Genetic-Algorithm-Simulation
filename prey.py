@@ -9,11 +9,11 @@ class Prey:
         self.position = position
         self.health = 1.0
         #self.dna
-        self.velocity = Vector(2,2)
+        self.velocity = Vector(1,1)
         self.acceleration = Vector(0,0)
         self.angle = self.velocity.Heading()
-        self.maxspeed = 3
-        self.maxforce = 0.2
+        self.maxspeed = 2
+        self.maxforce = 0.15
         self.dna = DNA()
 
 

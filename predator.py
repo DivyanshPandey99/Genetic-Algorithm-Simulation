@@ -8,11 +8,11 @@ class Predator:
     def __init__(self, position=Vector()):
         self.position = position
         self.health = 1.0
-        self.predatorsize = random.randint(12,25)
-        self.velocity = Vector(2,2)
+        self.predatorsize = random.randint(8,13)
+        self.velocity = Vector(1,1)
         self.acceleration = Vector(0,0)
         self.angle = self.velocity.Heading()
-        self.maxspeed = 50/self.predatorsize
+        self.maxspeed = 15/self.predatorsize
         self.maxforce = 0.2
         self.dna = DNA()
 
@@ -50,13 +50,13 @@ class Predator:
         if(record<5):
 
             #If prey is small, not able to eat most of the time
-            if(self.predatorsize<prey_size):
+            if(1.5*self.predatorsize<prey_size):
                 # Predator can't eat 95% of time if its size is small
-                if(random.random()<0.95):
+                if(random.random()<0.9):
                     return Vector(0,0)
             else:
                 #Predator can't eat preys 60% of the time
-                if(random.random()<0.6):
+                if(random.random()<0.5):
                     return Vector(0,0)    
             # Health changes by a factor of absorption power present in predator's DNA
             self.health += (list[closest].health/self.dna.absorption)
@@ -132,14 +132,14 @@ class Predator:
         ]
         #color = pygame.Color.lerp(lightblue,blue,self.health)
         #pygame.draw.polygon(screen, white, triangle,self.predatorsize//3)
-        pygame.draw.polygon(screen, red, triangle)
-
-
+        #pygame.draw.polygon(screen, red, triangle)
+        pygame.draw.circle(screen,darkred,self.position.xy(),self.predatorsize)
+        pygame.draw.circle(screen,lightred,self.position.xy(),self.predatorsize,2)
 
 
 class DNA:
     def __init__(self):
         self.huntforce = random.randint(0,5)
         self.huntperception = random.randint(20,150)
-        self.absorption = random.randint(3,6)
+        self.absorption = random.randint(2,4)
 

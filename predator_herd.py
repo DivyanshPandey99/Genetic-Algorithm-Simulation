@@ -7,7 +7,7 @@ from food import *
 
 class Predators:
     def __init__(self):
-        self.predatorcount = 50 #initial count
+        self.predatorcount = 40 #initial count
         self.predatorherd = self.initialiseHerd() #list
 
 
