@@ -4,6 +4,6 @@ Created Simulation of Genetic Algorithm, using Pygame, and Python.
 
 Has Preys, Predators, Food, Poison as objects.
 
-DNA of Preys, and Predators, makes the fitness function for Genetic algorithm.
+The DNA and and the fight for food and survival makes the fitness function for the Genetic algorithm.
 
 Cloning/Repproduction of Preys and Predators, involves probabilistic approach, and has mutation.
