@@ -47,6 +47,6 @@ In conclusion, the simulation of a genetic algorithm using Pygame provides an ex
 
 [THE NATURE OF CODE - DANIEL SHIFFMAN](https://natureofcode.com/book/chapter-9-the-evolution-of-code/)
 
-[Genetic Algorithms: An Overview](https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=630a7d2f0506cb5a01b09f07eef8a3b5a3af0387)
+[Genetic Algorithms: An Overview - Melanie Mitchell](https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=630a7d2f0506cb5a01b09f07eef8a3b5a3af0387)
 
 
