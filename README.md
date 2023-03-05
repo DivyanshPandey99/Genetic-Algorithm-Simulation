@@ -42,3 +42,11 @@ Pygame is a powerful library for creating games and simulations in Python. It pr
 ## Conclusion
 
 In conclusion, the simulation of a genetic algorithm using Pygame provides an excellent way to learn about genetic algorithms and their applications in real-world scenarios. The simulation is interactive and provides a hands-on way to explore the concepts of DNA, fitness function, and cloning in genetic algorithms.
+
+## References
+
+[THE NATURE OF CODE - DANIEL SHIFFMAN](https://natureofcode.com/book/chapter-9-the-evolution-of-code/)
+
+[Genetic Algorithms: An Overview](https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=630a7d2f0506cb5a01b09f07eef8a3b5a3af0387)
+
+
